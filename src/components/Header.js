@@ -12,7 +12,7 @@ const Header = () => {
                 </a>
             </div>
             <div className="header-item header-github">
-                <a href="https://github.com/">
+                <a href="https://github.com/SlavLyk?tab=repositories">
                     <img src={ github } className='github' alt=""/>
                 </a>
             </div>

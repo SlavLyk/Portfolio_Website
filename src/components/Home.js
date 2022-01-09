@@ -9,14 +9,12 @@ const Home = () => {
                         Hi, I'm <Svyatoslav /><br></br>I'm a full stack developer.
                     </h1>
                 </div>
-                <div className="navigation">
-                    <ul>
-                        <li>Skills</li>
-                        <li>Skills</li>
-                        <li>Skills</li>
-                        <li>Skills</li>
-                    </ul>
-                </div>
+                <ul className="navigation">
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                </ul>
             </div>
             <div className="right">
                 <div className="right-wrapper">
