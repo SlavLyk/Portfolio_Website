@@ -19,7 +19,7 @@ body {
 }
 
 /* HEADER */
-.header-container {
+.header {
   padding: 20px;
   display: flex;
   justify-content: flex-end;
@@ -83,6 +83,22 @@ h2 {
   font-size: 58px;
 }
 
+h3 {
+  color: var(--primary);
+  font-size: 45px;
+}
+
+h4 {
+  color: white;
+  font-size: 32px;
+}
+
+p {
+  color: white;
+  font-size: 32px;
+  line-height: 130%;
+}
+
 span {
   font-size: 72px;
   background: var(--textGrad1);
@@ -129,12 +145,19 @@ a:hover {
   background-color: #494949;
 }
 
+#card-parent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .card {
-  margin: 100px auto 0px auto;
+  margin: 100px 0px;
   background-color: #5f5f5f;
   width: 460px;
   height: 498px;
   border-radius: 23px;
+  position: absolute;
 }
 
 .card-circle {
@@ -146,18 +169,197 @@ a:hover {
   margin: auto;
   top: 50px;
 }
+
+.card-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 75px;
+}
+
+.card-items {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 100px;
+  font-size: 26px;
+  color: white;
+  line-height: 1.5em;
+}
+
+.card-selector {
+  margin-top: 500px;
+  background-color: var(--primary);
+  width: 460px;
+  height: 185px;
+}
+
 /* PROJECTS */
 .projects {
   background-color: var(--BG);
-  height: 200vh;
+  height: 150vh;
+}
+
+.project-content-v1 {
+  display: flex;
+}
+
+.project-content-v2 {
+  display: flex;
+  padding-top: 5%;
+}
+.projects-heading {
+  padding: 5% 9% 0.5% 15%;
+  font-size: 58px;
+}
+
+.project-title {
+  padding: 5% 7% 0%;
+  display: flex;
+}
+
+.project-text {
+  padding: 3% 7%;
+  display: flex;
+}
+
+.technologies {
+  padding: 0% 3%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: white;
+  align-items: center;
+}
+
+.project-left {
+  flex: 0.6;
+}
+
+.project-right {
+  flex: 0.4;
+}
+
+.video {
+  background-color: red;
+  margin: 0%;
+  width: 644px;
+  height: 426px;
+  border-radius: 15px;
+}
+
+.project-links {
+  margin-left: 6%;
 }
 /* ABOUT */
 .about {
   background-color: var(--BG2);
   height: 100vh;
 }
+
+.about-rectangle {
+  margin-left: 0%;
+  margin-bottom: 5%;
+  width: 300px;
+  height: 5px;
+  left: 370px;
+  top: 1177px;
+  background-color: #494949;
+}
+/* gradient is changed by chaning the size of the div */
+.about-heading {
+  padding: 5% 9% 0.5% 0%;
+  position: relative;
+  background: var(--textGrad1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-card {
+  position: absolute;
+  padding: 1% 9%;
+  margin: 5% 20% 5% 20%;
+  align-items: center;
+  background-color: black;
+  width: 1233px;
+  height: 610px;
+  border-radius: 15px;
+}
 /* CONTACT */
 .contact {
   background-color: var(--BG);
   height: 100vh;
+}
+
+.contact-heading {
+  padding: 5% 9% 0.5% 15%;
+  font-size: 58px;
+}
+
+.project-rectangle {
+  margin-left: 15%;
+  width: 400px;
+  height: 5px;
+  left: 370px;
+  top: 1177px;
+  background-color: #494949;
+}
+
+.contact-content {
+  margin-top: 5%;
+  margin-left: 12%;
+  display: flex;
+  justify-content: start;
+}
+
+.left-contact {
+  color: white;
+  padding: 0% 3%;
+  list-style: none;
+}
+
+.left-contact-li {
+  margin: 0% 0% 10%;
+  padding: 1.5% 1%;
+  background-color: var(--BG2);
+  border-radius: 10px;
+  font-size: 36px;
+  width: 571px;
+}
+
+.right-contact {
+  color: white;
+  list-style: none;
+}
+
+.right-contact-li {
+  background-color: var(--BG2);
+  padding: 1.5% 3%;
+  width: 450%;
+  height: 63%;
+  border-radius: 10px;
+  font-size: 36px;
+}
+
+.contact-send-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0% 0% 10%;
+  padding: 1.5% 1%;
+  background-color: var(--primary);
+  border-radius: 10px;
+  font-size: 36px;
+  width: 25%;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: var(--BG);
+}
+
+.footer-item {
+  padding: 3px;
 }

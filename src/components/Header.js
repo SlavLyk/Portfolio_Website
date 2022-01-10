@@ -5,7 +5,7 @@ import resume from '../imgs/resume.svg'
 
 const Header = () => {
     return (
-    <div className="header-container">
+    <div className="header">
             <div className="header-item header-linkedin">
                 <a href="https://www.linkedin.com/in/svyatoslav-lykhosherstov/">
                     <img src={ linkedin } className='linkedin' alt=""/>
