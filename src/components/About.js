@@ -1,9 +1,15 @@
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faHandSparkles } from '@fortawesome/free-solid-svg-icons'
+
 const About = () => {
     return (
         <div className="about" id="About">
             <div className="about-card">
                 <div className="about-heading">
-                <h2 className="about-heading-h2">ABOUT ME</h2>
+                    <h2 className="about-heading-h2">ABOUT ME</h2>
+                    <div className="wave-icon">
+                        <FontAwesomeIcon icon={ faHandSparkles }></FontAwesomeIcon>
+                    </div>
                 </div>
                 <div className="about-rectangle">
                 </div>

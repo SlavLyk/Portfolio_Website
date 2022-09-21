@@ -1,8 +1,6 @@
-import linkedin from '../imgs/linkedin.svg'
-import github from '../imgs/github.svg'
-import youtube from '../imgs/youtube.svg'
-import resume from '../imgs/resume.svg'
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faLinkedinIn, faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
     return (
@@ -27,22 +25,22 @@ const Contact = () => {
             <div className="footer">
             <div className="footer-item header-linkedin">
                 <a href="https://www.linkedin.com/in/svyatoslav-lykhosherstov/">
-                    <img src={ linkedin } className='linkedin' alt=""/>
+                    <FontAwesomeIcon icon={ faLinkedinIn }></FontAwesomeIcon>
                 </a>
             </div>
-            <div className="header-item header-github">
+            <div className="footer-item header-github">
                 <a href="https://github.com/SlavLyk?tab=repositories">
-                    <img src={ github } className='github' alt=""/>
+                <FontAwesomeIcon icon={ faGithub }></FontAwesomeIcon>
                 </a>
             </div>
-            <div className="header-item header-youtube">
+            <div className="footer-item header-youtube">
                 <a href="https://www.youtube.com/">
-                    <img src={ youtube } className='youtube' alt=""/>
+                <FontAwesomeIcon icon={ faYoutube }></FontAwesomeIcon>
                 </a>
             </div>
-            <div className="header-item header-resume">
+            <div className="footer-item header-resume">
                 <a href="https://www.linkedin.com/in/svyatoslav-lykhosherstov/">
-                    <img src={ resume } className='resume' alt=""/>
+                <FontAwesomeIcon icon={ faFile }></FontAwesomeIcon>
                 </a>
             </div>
     </div>
