@@ -14,17 +14,17 @@ const Projects = () => {
           <div className="project-title">
             <h3>Video Game Website</h3>
             <div className="technologies">
+              <div className="tech-items">React</div>
               <div className="tech-items">Node</div>
               <div className="tech-items">Express</div>
-              <div className="tech-items">MongoDB</div>
-              <div className="tech-items">React</div>
+              <div className="tech-items">Three.js</div>
             </div>
           </div>
           <p className="project-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.{" "}
+            Redesigned an outdated WordPress website into a React application
+            with a Back End server. Leading to a better representation of
+            company's brand image and values as well as intuitive user
+            experience.
           </p>
           <div className="project-links">
             <button
@@ -63,8 +63,8 @@ const Projects = () => {
             <h3>Crypto Api</h3>
             <div className="technologies">
               <div className="tech-items">Node</div>
+              <div className="tech-items">Three.js</div>
               <div className="tech-items">Express</div>
-              <div className="tech-items">MongoDB</div>
               <div className="tech-items">React</div>
             </div>
           </div>

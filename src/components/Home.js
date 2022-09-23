@@ -7,7 +7,7 @@ const Home = () => {
         <div className="left-wrapper">
           <h1>
             Hi, I'm <Svyatoslav />
-            <br></br>I'm a full stack developer.
+            <br></br>I'm a front end developer.
           </h1>
         </div>
         <ul className="navigation">
