@@ -291,13 +291,27 @@ a:hover {
   height: 1300px;
 }
 
+input {
+  color: white !important;
+}
+
+::placeholder {
+  color: white !important;
+}
+
+label {
+  font-size: 50px;
+  color: rgb(70, 70, 70) !important;
+}
 .project-content-v1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
 .project-content-v2 {
-  display: flex;
+  display: grid;
+  margin-top: 1%;
+  grid-template-columns: 1fr 1fr;
 
   padding-bottom: 5%;
 }
@@ -309,7 +323,6 @@ a:hover {
 .project-title {
   display: flex;
   flex-direction: column;
-  margin-left: 25%;
   margin-top: 5%;
   align-items: start;
 }
@@ -317,7 +330,7 @@ a:hover {
 .project-text {
   padding-top: 3%;
   padding-bottom: 3%;
-  padding-left: 25%;
+
   display: flex;
 }
 
@@ -340,7 +353,7 @@ a:hover {
 }
 .project-left {
   width: 100%;
-  margin-left: 13%;
+  margin-left: 39%;
 }
 
 .project-right {
@@ -350,18 +363,20 @@ a:hover {
 }
 
 .project-left-v2 {
-  flex: 0.6;
+  width: 100%;
+  margin-left: 5%;
+  padding-right: 30%;
 }
 
 .project-right-v2 {
-  flex: 0.4;
+  width: 100%;
 }
 .video {
   background-color: rgb(41, 41, 41);
   margin-right: 18%;
-  margin-left: 200px;
+  margin-left: 250px;
   margin-top: 3%;
-  width: 100%;
+  width: 818px;
   height: 350px;
   border-radius: 15px;
   display: flex;
@@ -388,7 +403,6 @@ a:hover {
   border-bottom: 15px solid transparent;
 }
 .project-links {
-  margin-left: 25%;
   margin-top: 3%;
 }
 
@@ -444,15 +458,16 @@ a:hover {
 /* CONTACT */
 .contact {
   background-color: var(--BG);
+  height: 1080px;
 }
 
 .contact-heading {
-  padding: 5% 9% 0.5% 15%;
+  padding: 5% 9% 0.5% 13%;
   font-size: 58px;
 }
 
 .project-rectangle {
-  margin-left: 15%;
+  margin-left: 13%;
   width: 400px;
   height: 5px;
   left: 370px;
@@ -461,16 +476,16 @@ a:hover {
 }
 
 .contact-content {
-  margin-top: 5%;
-  margin-left: 12%;
+  margin: 5% 10% 10% 13%;
   display: flex;
   justify-content: start;
 }
 
 .left-contact {
   color: white;
-  padding: 0% 3%;
+  /* padding: 0% 3%; */
   list-style: none;
+  width: 100%;
 }
 
 .left-contact-li {
@@ -485,6 +500,9 @@ a:hover {
 .right-contact {
   color: white;
   list-style: none;
+  padding: 0% 3%;
+  /* padding-right: 250px; */
+  width: 100%;
 }
 
 .right-contact-li {

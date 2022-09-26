@@ -1,3 +1,8 @@
+import * as React from "react";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import Button from "@mui/material/Button";
+import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
+
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noopener,noreferrer");
 };
@@ -27,18 +32,31 @@ const Projects = () => {
             experience.
           </p>
           <div className="project-links">
-            <button
-              className="live-demo-btn"
-              onClick={(e) => {
-                e.preventDefault();
-                openInNewTab("https://floating-axe-website.herokuapp.com/");
-              }}
-            >
-              Live Demo
-            </button>
-            <a href="#" className="source-demo-btn">
-              Source Code
-            </a>
+            {/* MUI BUTTON */}
+            <ButtonGroup>
+              <Button
+                sx={{ fontSize: "20px" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  openInNewTab("https://floating-axe-website.herokuapp.com/");
+                }}
+                startIcon={<OpenInNewRoundedIcon />}
+                variant="contained"
+              >
+                Live Demo
+              </Button>
+              <Button
+                sx={{ fontSize: "20px" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  openInNewTab("https://github.com/SlavLyk/Fas_Website");
+                }}
+                variant="outlined"
+                color="secondary"
+              >
+                Source Code
+              </Button>
+            </ButtonGroup>
           </div>
         </div>
         <div className="project-right">
@@ -60,7 +78,7 @@ const Projects = () => {
         </div>
         <div className="project-left-v2">
           <div className="project-title">
-            <h3>Crypto Api</h3>
+            <h3>Portfolio Website</h3>
             <div className="technologies">
               <div className="tech-items">Node</div>
               <div className="tech-items">Three.js</div>
@@ -75,12 +93,30 @@ const Projects = () => {
             aliquip ex ea commodo consequat.{" "}
           </p>
           <div className="project-links">
-            <a href="#" className="live-demo-btn">
-              Live Demo
-            </a>
-            <a href="#" className="source-demo-btn">
-              Source Code
-            </a>
+            <ButtonGroup>
+              <Button
+                sx={{ fontSize: "20px" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  openInNewTab("https://floating-axe-website.herokuapp.com/");
+                }}
+                startIcon={<OpenInNewRoundedIcon />}
+                variant="contained"
+              >
+                Live Demo
+              </Button>
+              <Button
+                sx={{ fontSize: "20px" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  openInNewTab("https://github.com/SlavLyk/Fas_Website");
+                }}
+                variant="outlined"
+                color="secondary"
+              >
+                Source Code
+              </Button>
+            </ButtonGroup>
           </div>
         </div>
       </div>

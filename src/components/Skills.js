@@ -17,7 +17,6 @@ const Skills = () => {
       </div>
       <div className="rectangle"></div>
       <Cards />
-      {/* <CardSelector /> */}
     </div>
   );
 };

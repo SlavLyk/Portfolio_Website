@@ -1,52 +1,128 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faLinkedinIn, faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faFile } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedinIn,
+  faGithub,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { TextField, Grid } from "@mui/material";
+import Button from "@mui/material/Button";
+
+const style = {
+  mb: 8,
+  fontSize: "63px",
+  input: {
+    color: "white",
+  },
+  "&:hover fieldset": {
+    borderWidth: 2,
+  },
+  "& .MuiInputLabel-root": {
+    color: "green",
+    fontSize: 25,
+  }, //styles the label
+  "& .MuiOutlinedInput-root": {
+    "& > fieldset": { borderColor: "orange" },
+  },
+  "& .MuiOutlinedInput-root:hover": {
+    "& > fieldset": {
+      borderColor: "orange",
+    },
+  },
+  //   backgroundColor: { xs: "pink" },
+};
 
 const Contact = () => {
-    return (
-        <div className="contact" id="Contact">
-            <div className="contact-heading">
-                <h2>GET IN TOUCH</h2>
-                </div>
-                <div className="project-rectangle">
-            </div>
-            <div className="contact-content">
-                <ul className="left-contact">
-                    <li className="left-contact-li">First Name</li>
-                    <li className="left-contact-li">Last Name</li>
-                    <li className="left-contact-li">Email</li>
-                    <li className="contact-send-btn">Send</li>
-                </ul>
-                
-                <ul className="right-contact">
-                    <li className="right-contact-li">Message</li>
-                </ul>
-            </div>
-            <div className="footer">
-            <div className="footer-item header-linkedin">
-                <a href="https://www.linkedin.com/in/svyatoslav-lykhosherstov/">
-                    <FontAwesomeIcon icon={ faLinkedinIn }></FontAwesomeIcon>
-                </a>
-            </div>
-            <div className="footer-item header-github">
-                <a href="https://github.com/SlavLyk?tab=repositories">
-                <FontAwesomeIcon icon={ faGithub }></FontAwesomeIcon>
-                </a>
-            </div>
-            <div className="footer-item header-youtube">
-                <a href="https://www.youtube.com/">
-                <FontAwesomeIcon icon={ faYoutube }></FontAwesomeIcon>
-                </a>
-            </div>
-            <div className="footer-item header-resume">
-                <a href="https://www.linkedin.com/in/svyatoslav-lykhosherstov/">
-                <FontAwesomeIcon icon={ faFile }></FontAwesomeIcon>
-                </a>
-            </div>
-    </div>
-    )
-        </div>
-    )
-}
+  return (
+    <div className="contact" id="Contact">
+      <div className="contact-heading">
+        <h2>GET IN TOUCH</h2>
+      </div>
+      <div className="project-rectangle"></div>
+      <div className="contact-content">
+        <ul className="left-contact">
+          <Grid container spacing={1}>
+            <Grid sm={12} item>
+              <TextField
+                fullWidth
+                sx={{ ...style }}
+                label="First Name"
+                placeholder="Enter First Name"
+                variant="outlined"
+              ></TextField>
+            </Grid>
+            <Grid sm={12} item>
+              <TextField
+                fullWidth
+                sx={{ ...style }}
+                label="Last Name"
+                placeholder="Enter First Name"
+                variant="outlined"
+              ></TextField>
+            </Grid>
+            <Grid sm={12} item>
+              <TextField
+                fullWidth
+                sx={{ ...style }}
+                label="Email"
+                placeholder="Enter First Name"
+                variant="outlined"
+              ></TextField>
+            </Grid>
+            <Grid sm={12} item>
+              <Button
+                sx={{ ...style, pr: 4, pl: 4, fontSize: "28px" }}
+                variant="contained"
+                color="primary"
+              >
+                Send
+              </Button>
+            </Grid>
+          </Grid>
+        </ul>
 
-export default Contact
+        <ul className="right-contact">
+          <Grid container spacing={1}>
+            <Grid sm={22} item>
+              <TextField
+                fullWidth
+                sx={{ ...style }}
+                label="Message"
+                multiline
+                rows={9.3}
+                inputProps={{ style: { color: "white" } }}
+                placeholder="Enter First Name"
+                variant="outlined"
+              ></TextField>
+            </Grid>
+          </Grid>
+        </ul>
+      </div>
+      <div className="footer">
+        <div className="footer-item header-linkedin">
+          <a href="https://www.linkedin.com/in/svyatoslav-lykhosherstov/">
+            <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className="footer-item header-github">
+          <a href="https://github.com/SlavLyk?tab=repositories">
+            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className="footer-item header-youtube">
+          <a href="https://www.youtube.com/">
+            <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+          </a>
+        </div>
+        <div className="footer-item header-resume">
+          <a href="https://www.linkedin.com/in/svyatoslav-lykhosherstov/">
+            <FontAwesomeIcon icon={faFile}></FontAwesomeIcon>
+          </a>
+        </div>
+      </div>
+      )
+    </div>
+  );
+};
+
+export default Contact;
