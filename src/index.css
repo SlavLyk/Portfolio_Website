@@ -116,7 +116,7 @@ p {
   font-weight: 800;
 }
 
-span {
+h1 span {
   font-size: 72px;
   background: var(--textGrad1);
   -webkit-background-clip: text;
@@ -300,7 +300,6 @@ input {
 }
 
 label {
-  font-size: 50px;
   color: rgb(70, 70, 70) !important;
 }
 .project-content-v1 {
@@ -359,6 +358,7 @@ label {
 .project-right {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -401,6 +401,15 @@ label {
   border-top: 15px solid transparent;
   border-left: 25px solid rgb(138, 138, 138);
   border-bottom: 15px solid transparent;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  background-color: #494949;
+  width: 818px;
+  margin-left: 250px;
+  margin-top: 2.5%;
 }
 .project-links {
   margin-top: 3%;
@@ -458,7 +467,6 @@ label {
 /* CONTACT */
 .contact {
   background-color: var(--BG);
-  height: 1080px;
 }
 
 .contact-heading {
@@ -476,7 +484,7 @@ label {
 }
 
 .contact-content {
-  margin: 5% 10% 10% 13%;
+  margin: 5% 10% 5% 13%;
   display: flex;
   justify-content: start;
 }
@@ -526,7 +534,7 @@ label {
 }
 
 .footer {
-  padding: 60px 20px 20px 20px;
+  padding: 84px 20px 20px 20px;
   display: flex;
   justify-content: center;
   background: var(--BG);

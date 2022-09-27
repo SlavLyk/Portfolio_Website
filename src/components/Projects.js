@@ -65,6 +65,7 @@ const Projects = () => {
               <div className="play-btn2"></div>
             </div>
           </div>
+          <div className="line"></div>
         </div>
       </div>
 

@@ -18,7 +18,8 @@ const style = {
     borderWidth: 2,
   },
   "& .MuiInputLabel-root": {
-    color: "green",
+    color: "blue",
+    padding: 1,
     fontSize: 25,
   }, //styles the label
   "& .MuiOutlinedInput-root": {
@@ -39,65 +40,88 @@ const Contact = () => {
         <h2>GET IN TOUCH</h2>
       </div>
       <div className="project-rectangle"></div>
-      <div className="contact-content">
-        <ul className="left-contact">
-          <Grid container spacing={1}>
-            <Grid sm={12} item>
-              <TextField
-                fullWidth
-                sx={{ ...style }}
-                label="First Name"
-                placeholder="Enter First Name"
-                variant="outlined"
-              ></TextField>
+      <form
+        action="https://formsubmit.co/7fbee76da30c6e46ec4431e0fc3d9d2d"
+        method="POST"
+      >
+        <div className="contact-content">
+          <ul className="left-contact">
+            <Grid container spacing={1}>
+              <Grid sm={12} item>
+                <TextField
+                  fullWidth
+                  sx={{ ...style }}
+                  label="First Name"
+                  placeholder="Enter First Name"
+                  variant="outlined"
+                  inputProps={{
+                    autoComplete: "none",
+                  }}
+                  name="name"
+                  required
+                ></TextField>
+              </Grid>
+              <Grid sm={12} item>
+                <TextField
+                  fullWidth
+                  sx={{ ...style }}
+                  label="Last Name"
+                  placeholder="Enter Last Name"
+                  variant="outlined"
+                  inputProps={{
+                    autoComplete: "none",
+                  }}
+                  name="last_name"
+                  required
+                ></TextField>
+              </Grid>
+              <Grid sm={12} item>
+                <TextField
+                  fullWidth
+                  sx={{ ...style }}
+                  label="Email"
+                  placeholder="Enter Email"
+                  variant="outlined"
+                  inputProps={{
+                    autoComplete: "none",
+                  }}
+                  name="email"
+                  required
+                ></TextField>
+              </Grid>
+              <Grid sm={12} item>
+                <Button
+                  type="submit"
+                  sx={{ ...style, pr: 4, pl: 4, fontSize: "28px" }}
+                  variant="contained"
+                  color="primary"
+                >
+                  Send
+                </Button>
+              </Grid>
             </Grid>
-            <Grid sm={12} item>
-              <TextField
-                fullWidth
-                sx={{ ...style }}
-                label="Last Name"
-                placeholder="Enter First Name"
-                variant="outlined"
-              ></TextField>
-            </Grid>
-            <Grid sm={12} item>
-              <TextField
-                fullWidth
-                sx={{ ...style }}
-                label="Email"
-                placeholder="Enter First Name"
-                variant="outlined"
-              ></TextField>
-            </Grid>
-            <Grid sm={12} item>
-              <Button
-                sx={{ ...style, pr: 4, pl: 4, fontSize: "28px" }}
-                variant="contained"
-                color="primary"
-              >
-                Send
-              </Button>
-            </Grid>
-          </Grid>
-        </ul>
+          </ul>
 
-        <ul className="right-contact">
-          <Grid container spacing={1}>
-            <Grid sm={22} item>
-              <TextField
-                fullWidth
-                sx={{ ...style }}
-                label="Message"
-                multiline
-                rows={9.3}
-                inputProps={{ style: { color: "white" } }}
-                placeholder="Enter First Name"
-                variant="outlined"
-              ></TextField>
+          <ul className="right-contact">
+            <Grid container spacing={1}>
+              <Grid sm={22} item>
+                <TextField
+                  fullWidth
+                  sx={{ ...style }}
+                  label="Message"
+                  multiline
+                  rows={7.3}
+                  inputProps={{ style: { color: "white" } }}
+                  placeholder="Enter Message"
+                  variant="outlined"
+                  name="message"
+                  required
+                ></TextField>
+              </Grid>
             </Grid>
-          </Grid>
-        </ul>
-      </div>
+          </ul>
+        </div>
+      </form>
       <div className="footer">
         <div className="footer-item header-linkedin">
           <a href="https://www.linkedin.com/in/svyatoslav-lykhosherstov/">
@@ -120,7 +144,6 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      )
     </div>
   );
 };

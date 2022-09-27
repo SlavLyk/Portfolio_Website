@@ -9,6 +9,7 @@ const theme = createTheme({
   typography: {
     fontSize: 30,
   },
+
   palette: {
     primary: {
       main: "#FFA133",
