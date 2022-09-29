@@ -19,11 +19,13 @@ const style = {
   },
   "& .MuiInputLabel-root": {
     color: "blue",
-    padding: 1,
+
     fontSize: 25,
   }, //styles the label
   "& .MuiOutlinedInput-root": {
-    "& > fieldset": { borderColor: "orange" },
+    "& > fieldset": {
+      borderColor: "orange",
+    },
   },
   "& .MuiOutlinedInput-root:hover": {
     "& > fieldset": {
@@ -110,7 +112,7 @@ const Contact = () => {
                   sx={{ ...style }}
                   label="Message"
                   multiline
-                  rows={7.3}
+                  rows={9.3}
                   inputProps={{ style: { color: "white" } }}
                   placeholder="Enter Message"
                   variant="outlined"

@@ -61,9 +61,18 @@ const Projects = () => {
         </div>
         <div className="project-right">
           <div className="video">
-            <div className="play-btn1">
+            <iframe
+              width={818}
+              height={350}
+              src="https://www.youtube.com/embed/jfKfPfyJRdk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            {/* <div className="play-btn1">
               <div className="play-btn2"></div>
-            </div>
+            </div> */}
           </div>
           <div className="line"></div>
         </div>
@@ -72,10 +81,17 @@ const Projects = () => {
       <div className="project-content-v2">
         <div className="project-right-v2">
           <div className="video">
-            <div className="play-btn1">
-              <div className="play-btn2"></div>
-            </div>
+            <iframe
+              width={818}
+              height={350}
+              src="https://www.youtube.com/embed/jfKfPfyJRdk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
+          <div className="line"></div>
         </div>
         <div className="project-left-v2">
           <div className="project-title">
@@ -88,10 +104,10 @@ const Projects = () => {
             </div>
           </div>
           <p className="project-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.{" "}
+            Redesigned an outdated WordPress website into a React application
+            with a Back End server. Leading to a better representation of
+            company's brand image and values as well as intuitive user
+            experience.
           </p>
           <div className="project-links">
             <ButtonGroup>

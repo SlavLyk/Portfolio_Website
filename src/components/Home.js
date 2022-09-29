@@ -28,14 +28,14 @@ const Home = () => {
       <div className="right">
         <div className="right-wrapper">
           {/* <div className="circleContainer">
-            <img src={slav_head} alt="" />
           </div> */}
+          <img src={slav_head} alt="" className="slav-head" />
         </div>
       </div>
     </div>
   );
 };
 
-const Svyatoslav = () => <span className="name">Svyatoslav.</span>;
+const Svyatoslav = () => <span className="name">Slav.</span>;
 
 export default Home;
