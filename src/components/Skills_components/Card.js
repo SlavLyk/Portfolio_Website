@@ -42,25 +42,22 @@ function Cards() {
           console.log(card);
           return (
             <>
-              <div key={card.id} className="card-selector-container">
-                <div key={card.id} className="card-container">
-                  <div key={card.id} className="card">
-                    <div key={card.id} className={card.classCirle}>
-                      <FontAwesomeIcon icon={card.icon}></FontAwesomeIcon>
-                    </div>
-                    <div className={card.classTitle}>
-                      <h3 key={card.id}>{card.title}</h3>
-                    </div>
-                    <div className="card-items">
-                      <ul>
-                        {card.li.map((list) => (
-                          <li>{list}</li>
-                        ))}
-                      </ul>
-                    </div>
+              <div key={card.id} className="card-container">
+                <div key={card.id} className="card">
+                  <div key={card.id} className={card.classCirle}>
+                    <FontAwesomeIcon icon={card.icon}></FontAwesomeIcon>
+                  </div>
+                  <div className={card.classTitle}>
+                    <h3 key={card.id}>{card.title}</h3>
+                  </div>
+                  <div className="card-items">
+                    <ul>
+                      {card.li.map((list) => (
+                        <li>{list}</li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
-                <div key={card.id} className="card-selector"></div>
               </div>
             </>
           );

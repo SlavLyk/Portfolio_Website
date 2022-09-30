@@ -25,21 +25,25 @@ body {
 
 /* HEADER */
 .header {
-  padding: 15px;
+  padding: 15px 0px 15px 0px;
   display: flex;
   justify-content: flex-end;
-  background: var(--BG);
+  background: rgba(0, 0, 0, 0.001);
+  top: 0;
+  position: sticky;
+  background-color: var(--BG);
+  z-index: 100;
 }
 
 .header-item {
-  padding: 5px;
+  padding: 5px 0px 5px 0px;
   font-size: 140%;
 }
 
 /* HOME */
 .home {
   background-color: var(--BG);
-  height: 1080px;
+  height: 1010px;
   display: flex;
 }
 
@@ -68,6 +72,7 @@ body {
 
 .slav-head {
   width: 379px;
+  margin-bottom: 10%;
 }
 
 .right {
@@ -136,16 +141,24 @@ h1 span {
 }
 
 a {
-  padding: 20px 30px 20px 15px;
+  padding: 20px 25px 20px 15px;
   color: var(--primary);
   text-decoration: none;
   font-weight: 600;
+  font-size: 32px;
 }
 
 a:hover {
   color: coral;
 }
 
+.header-item a {
+  font-size: 24px;
+}
+
+.footer a {
+  font-size: 24px;
+}
 /* SKILLS */
 .skills {
   background-color: var(--BG2);
@@ -169,10 +182,14 @@ a:hover {
 
 #card-parent {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 13%;
+  display: grid;
 
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 12%;
+  grid-gap: 20px;
+  justify-content: center;
+
+  padding: 10px;
   /* margin-top: 100px; */
   /* width: 100%; */
 }
@@ -199,19 +216,25 @@ a:hover {
 .card-container {
   display: flex;
   justify-content: center;
-  margin: 0px 0px;
+  align-items: center;
+  flex-direction: column;
+
+  /* margin: 0px 0px; */
 }
 
 .card {
   z-index: 1;
+  order: 0;
   margin: 50px 0px;
   background-color: #5f5f5f;
-  width: 460px;
+  width: 100%;
+  max-width: 460px;
   height: 498px;
   border-radius: 23px;
-  position: absolute;
+  grid-area: card;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: transform 500ms ease;
+  order: revert;
   /* border-top: 9px solid #ffc700;
   border: 0; */
 }
@@ -261,6 +284,12 @@ a:hover {
 .card-title3 h3 {
   color: var(--cardpink);
 }
+.card-items ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .card-items li {
   /* display: flex; */
@@ -270,8 +299,8 @@ a:hover {
   font-weight: 100;
   line-height: 1.5em;
   padding-left: 5px;
-  margin-left: 165px;
 
+  list-style-type: none;
   /* text-align: center; */
 }
 
@@ -376,12 +405,9 @@ label {
   width: 100%;
 }
 .video {
-  background-color: rgb(41, 41, 41);
   margin-right: 18%;
   margin-left: 230px;
   margin-top: 3%;
-  width: 818px;
-  height: 350px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -553,4 +579,125 @@ label {
 .footer-item {
   padding: 5px;
   font-size: 140%;
+}
+
+@media screen and (max-width: 1600px) {
+  /* all the font infos */
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 27px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  a {
+    font-size: 30px;
+    padding: 20px 20px 20px 10px;
+  }
+
+  .header-item a {
+    font-size: 20px;
+  }
+
+  .footer a {
+    font-size: 20px;
+  }
+
+  .left-wrapper {
+    /* padding-left: 13%; */
+  }
+
+  .navigation {
+    /* padding-left: 12%; */
+  }
+
+  /* set all BG to smaller size */
+  .home {
+    height: 730px;
+  }
+
+  .slav-head {
+    width: 65%;
+    margin-top: 25px;
+    margin-left: 10%;
+  }
+  /* SKills */
+  .skills {
+    height: 600px;
+  }
+
+  .skills-heading {
+    padding-top: 50px;
+  }
+
+  .rectangle {
+    width: 200px;
+  }
+
+  #card-parent {
+  }
+
+  .card {
+    height: 400px;
+    margin-top: 30px;
+  }
+
+  .card-circle,
+  .card-circle2,
+  .card-circle3 {
+    font-size: 1.8rem;
+    height: 80px;
+    width: 80px;
+  }
+
+  .card-title h3,
+  .card-title2 h3,
+  .card-title3 h3 {
+    font-size: 30px;
+  }
+
+  .card-items li {
+    font-size: 20px;
+  }
+  /* POJECTS */
+  .projects {
+    height: 1080px;
+  }
+
+  .project-left {
+    margin-left: 45%;
+  }
+
+  .video {
+    width: 630px;
+  }
+
+  .line {
+    width: 630px;
+  }
+
+  .project-content-v1 {
+    margin-top: 1%;
+  }
+  /* ABOUT */
+  .about {
+    height: 600px;
+  }
+  /* CONTACT */
+  .contact {
+    height: 780px;
+  }
 }
