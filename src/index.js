@@ -7,7 +7,7 @@ import { ThemeProvider, createTheme } from "@mui/material";
 
 const theme = createTheme({
   typography: {
-    fontSize: 20,
+    fontSize: 16,
   },
 
   palette: {
@@ -19,6 +19,15 @@ const theme = createTheme({
     },
     secondary: {
       main: "#00B3FF",
+    },
+  },
+  breakpoints: {
+    values: {
+      xs: 360,
+      sm: 480,
+      md: 850,
+      lg: 1160,
+      xl: 1600,
     },
   },
 });

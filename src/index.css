@@ -23,6 +23,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+#Skills {
+}
+
 /* HEADER */
 .header {
   padding: 15px 0px 15px 0px;
@@ -30,7 +33,7 @@ body {
   justify-content: flex-end;
   background: rgba(0, 0, 0, 0.001);
   top: 0;
-  position: sticky;
+  /* position: sticky; */
   background-color: var(--BG);
   z-index: 100;
 }
@@ -45,10 +48,11 @@ body {
   background-color: var(--BG);
   height: 1010px;
   display: flex;
+  padding: 0 250px;
 }
 
 .left {
-  flex: 0.6;
+  width: 100%;
 }
 
 .circleContainer {
@@ -76,13 +80,12 @@ body {
 }
 
 .right {
-  flex: 0.3;
+  display: flex;
 }
 
 .left-wrapper {
-  width: 130%;
   height: 60%;
-  padding-left: 22%;
+
   padding-right: 5%;
   display: flex;
   flex-direction: column;
@@ -134,7 +137,6 @@ h1 span {
 .navigation {
   display: flex;
   justify-content: start;
-  padding-left: 21%;
   margin-top: 25px;
   list-style: none;
   font-size: 2em;
@@ -164,15 +166,15 @@ a:hover {
   background-color: var(--BG2);
   height: 846px;
   margin: 0;
+  padding: 0px 250px;
 }
 
 .skills-heading {
-  padding: 5% 9% 0.5% 13%;
+  padding: 5% 9% 0.5% 0%;
   font-size: 58px;
 }
 
 .rectangle {
-  margin-left: 13%;
   width: 300px;
   height: 5px;
   left: 370px;
@@ -185,7 +187,7 @@ a:hover {
   display: grid;
 
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 12%;
+
   grid-gap: 20px;
   justify-content: center;
 
@@ -321,6 +323,7 @@ a:hover {
 .projects {
   background-color: var(--BG);
   height: 1300px;
+  padding: 0 250px;
 }
 
 input {
@@ -343,12 +346,12 @@ label {
 .project-content-v2 {
   display: grid;
   margin-top: 3%;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
 
   padding-bottom: 5%;
 }
 .projects-heading {
-  padding: 3% 9% 0.5% 13%;
+  padding: 3% 9% 0.5% 0%;
   font-size: 58px;
 }
 
@@ -360,7 +363,6 @@ label {
 }
 
 .project-text {
-  padding-right: 25%;
   padding-top: 5%;
 
   padding-bottom: 4%;
@@ -387,7 +389,6 @@ label {
 }
 .project-left {
   width: 100%;
-  margin-left: 39%;
 }
 
 .project-right {
@@ -398,20 +399,40 @@ label {
 }
 
 .project-left-v2 {
-  margin-left: 5%;
 }
 
 .project-right-v2 {
   width: 100%;
-}
-.video {
-  margin-right: 18%;
-  margin-left: 230px;
-  margin-top: 3%;
-  border-radius: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+
+.video-1 {
+  height: 426px;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.video-2 {
+  height: 426px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+iframe {
+  width: 90%;
+  height: 90%;
+}
+.line {
+  width: 90%;
+  height: 5px;
+  background-color: #494949;
+
+  justify-content: end;
+  margin-top: 2.5%;
 }
 
 .play-btn1 {
@@ -433,14 +454,6 @@ label {
   border-bottom: 15px solid transparent;
 }
 
-.line {
-  width: 100%;
-  height: 5px;
-  background-color: #494949;
-  width: 818px;
-  margin-left: 230px;
-  margin-top: 2.5%;
-}
 .project-links {
   margin-top: 3%;
 }
@@ -456,7 +469,8 @@ label {
 /* ABOUT */
 .about {
   background-color: var(--BG2);
-  padding: 100px 0;
+
+  padding: 100px 250px;
 }
 
 .about-rectangle {
@@ -485,9 +499,9 @@ label {
 .about-card {
   position: relative;
   padding: 1% 4%;
-  margin: 0 auto;
+
   align-items: center;
-  width: 75%;
+
   height: 610px;
   border-radius: 15px;
   background: #4b4b4b;
@@ -503,15 +517,15 @@ label {
 .contact {
   background-color: var(--BG);
   height: 1080px;
+  padding: 0px 250px;
 }
 
 .contact-heading {
-  padding: 5% 9% 0.5% 13%;
+  padding: 5% 0% 0.5% 0%;
   font-size: 58px;
 }
 
 .project-rectangle {
-  margin-left: 13%;
   width: 400px;
   height: 5px;
   left: 370px;
@@ -520,7 +534,7 @@ label {
 }
 
 .contact-content {
-  margin: 6% 10% 5% 13%;
+  margin: 6% 0% 5% 0%;
   display: flex;
   justify-content: start;
 }
@@ -544,7 +558,7 @@ label {
 .right-contact {
   color: white;
   list-style: none;
-  padding: 0% 3%;
+  padding: 0% 0% 0% 3%;
   /* padding-right: 250px; */
   width: 100%;
 }
@@ -571,6 +585,7 @@ label {
 
 .footer {
   padding: 84px 20px 20px 20px;
+  width: 100%;
   display: flex;
   justify-content: center;
   background: var(--BG);
@@ -580,7 +595,7 @@ label {
   padding: 5px;
   font-size: 140%;
 }
-
+/* MACBOOK */
 @media screen and (max-width: 1600px) {
   /* all the font infos */
   h1 {
@@ -626,16 +641,18 @@ label {
 
   /* set all BG to smaller size */
   .home {
+    padding: 0 130px;
     height: 730px;
   }
 
   .slav-head {
-    width: 65%;
+    width: 100%;
     margin-top: 25px;
-    margin-left: 10%;
   }
   /* SKills */
   .skills {
+    padding: 0 130px;
+
     height: 600px;
   }
 
@@ -675,18 +692,33 @@ label {
   /* POJECTS */
   .projects {
     height: 1080px;
+    padding: 0 130px;
   }
 
   .project-left {
-    margin-left: 45%;
-  }
-
-  .video {
-    width: 630px;
   }
 
   .line {
-    width: 630px;
+    width: 85%;
+  }
+
+  .video-1 {
+    height: 426px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+  }
+
+  .video-2 {
+    height: 426px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 85%;
+    height: 63%;
   }
 
   .project-content-v1 {
@@ -695,9 +727,75 @@ label {
   /* ABOUT */
   .about {
     height: 600px;
+    padding: 50px 130px;
+  }
+
+  .about-card {
+    height: 100%;
+    padding: 2.5% 10%;
+  }
+
+  .about-card p {
+    font-size: 24px;
   }
   /* CONTACT */
   .contact {
     height: 780px;
+    padding: 0 130px;
+  }
+
+  .contact-content {
+    margin: 0;
+    margin-top: 5%;
+  }
+
+  .footer {
+    padding: 0;
+  }
+}
+/* IPAD */
+
+@media screen and (max-width: 1160px) {
+  .home {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+
+  .skills {
+    padding: 0 50px;
+
+    height: 600px;
+  }
+  .projects {
+    height: 1080px;
+    padding: 0 50px;
+  }
+
+  .about {
+    height: 600px;
+    padding: 50px 50px;
+  }
+
+  .contact {
+    height: 780px;
+    padding: 0 50px;
+  }
+
+  .about-rectangle {
+    width: 200px;
+  }
+
+  .left {
+  }
+
+  .right {
+  }
+
+  .slav-head {
+    width: 525px;
+  }
+
+  .right-wrapper {
+    flex-direction: row;
   }
 }

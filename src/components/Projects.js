@@ -60,10 +60,9 @@ const Projects = () => {
           </div>
         </div>
         <div className="project-right">
-          <div className="video">
+          <div className="video-1">
             <iframe
-              width={818}
-              height={350}
+              className="iframe"
               src="https://www.youtube.com/embed/jfKfPfyJRdk"
               title="YouTube video player"
               frameborder="0"
@@ -73,25 +72,24 @@ const Projects = () => {
             {/* <div className="play-btn1">
               <div className="play-btn2"></div>
             </div> */}
+            <div className="line"></div>
           </div>
-          <div className="line"></div>
         </div>
       </div>
 
       <div className="project-content-v2">
         <div className="project-right-v2">
-          <div className="video">
+          <div className="video-2">
             <iframe
-              width={818}
-              height={350}
+              className="iframe"
               src="https://www.youtube.com/embed/jfKfPfyJRdk"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
+            <div className="line"></div>
           </div>
-          <div className="line"></div>
         </div>
         <div className="project-left-v2">
           <div className="project-title">
@@ -112,7 +110,8 @@ const Projects = () => {
           <div className="project-links">
             <ButtonGroup>
               <Button
-                sx={{ fontSize: "20px" }}
+                sx={{ p: 0 }}
+                sx={{ fontSize: { xl: "16px", lg: "16px" } }}
                 onClick={(e) => {
                   e.preventDefault();
                   openInNewTab("https://floating-axe-website.herokuapp.com/");
@@ -123,7 +122,7 @@ const Projects = () => {
                 Live Demo
               </Button>
               <Button
-                sx={{ fontSize: "20px" }}
+                sx={{ fontSize: { xl: "16px", lg: "16px" } }}
                 onClick={(e) => {
                   e.preventDefault();
                   openInNewTab("https://github.com/SlavLyk/Fas_Website");
