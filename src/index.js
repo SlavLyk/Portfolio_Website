@@ -7,7 +7,7 @@ import { ThemeProvider, createTheme } from "@mui/material";
 
 const theme = createTheme({
   typography: {
-    fontSize: 16,
+    fontSize: 20,
   },
 
   palette: {

@@ -35,7 +35,7 @@ const Projects = () => {
             {/* MUI BUTTON */}
             <ButtonGroup>
               <Button
-                sx={{ fontSize: "20px" }}
+                sx={{ fontSize: "16px" }}
                 onClick={(e) => {
                   e.preventDefault();
                   openInNewTab("https://floating-axe-website.herokuapp.com/");
@@ -46,7 +46,7 @@ const Projects = () => {
                 Live Demo
               </Button>
               <Button
-                sx={{ fontSize: "20px" }}
+                sx={{ fontSize: "16px" }}
                 onClick={(e) => {
                   e.preventDefault();
                   openInNewTab("https://github.com/SlavLyk/Fas_Website");
@@ -110,8 +110,7 @@ const Projects = () => {
           <div className="project-links">
             <ButtonGroup>
               <Button
-                sx={{ p: 0 }}
-                sx={{ fontSize: { xl: "16px", lg: "16px" } }}
+                sx={{ fontSize: "16px" }}
                 onClick={(e) => {
                   e.preventDefault();
                   openInNewTab("https://floating-axe-website.herokuapp.com/");
@@ -122,7 +121,8 @@ const Projects = () => {
                 Live Demo
               </Button>
               <Button
-                sx={{ fontSize: { xl: "16px", lg: "16px" } }}
+                // sx={{ fontSize: { xl: "16px", lg: "16px" } }}
+                sx={{ fontSize: "16px" }}
                 onClick={(e) => {
                   e.preventDefault();
                   openInNewTab("https://github.com/SlavLyk/Fas_Website");
