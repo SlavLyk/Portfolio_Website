@@ -91,16 +91,6 @@ const Contact = () => {
                   required
                 ></TextField>
               </Grid>
-              <Grid sm={12} item>
-                <Button
-                  type="submit"
-                  sx={{ ...style, pr: 4, pl: 4, fontSize: "28px" }}
-                  variant="contained"
-                  color="primary"
-                >
-                  Send
-                </Button>
-              </Grid>
             </Grid>
           </ul>
 
@@ -123,6 +113,14 @@ const Contact = () => {
             </Grid>
           </ul>
         </div>
+        <Button
+          type="submit"
+          sx={{ ...style, pr: 4, pl: 4, fontSize: "28px" }}
+          variant="contained"
+          color="primary"
+        >
+          Send
+        </Button>
       </form>
       <div className="footer">
         <div className="footer-item header-linkedin">

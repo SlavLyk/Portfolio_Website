@@ -698,6 +698,14 @@ iframe {
   .project-left {
   }
 
+  .project-rectangle {
+    width: 280px;
+  }
+
+  .about-rectangle {
+    width: 200px;
+  }
+
   .line {
     width: 85%;
   }
@@ -783,7 +791,7 @@ iframe {
     height: 600px;
   }
   .projects {
-    height: 1900px;
+    height: 2100px;
     padding: 0 50px;
   }
 
@@ -810,6 +818,10 @@ iframe {
 
   .slav-head {
     width: 525px;
+  }
+
+  .line {
+    width: 100%;
   }
 
   .right-wrapper {
@@ -854,7 +866,8 @@ iframe {
 
   .video-2 {
     margin-top: 5%;
-    height: 426px;
+    height: 500px;
+
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -935,6 +948,8 @@ iframe {
 
   .card {
     height: 460px;
+    margin: 20px 0px;
+    margin-top: 50px;
   }
 
   .card-circle,
@@ -950,5 +965,149 @@ iframe {
   .card-title2 h3,
   .card-title3 h3 {
     font-size: 45px;
+  }
+  /* about */
+  .about {
+    height: 700px;
+  }
+  /* projects phone lg */
+
+  .project-rectangle {
+    width: 270px;
+  }
+
+  .projects-heading {
+    padding: 10% 9% 0.5% 0%;
+    font-size: 58px;
+  }
+  /* contact phone lg */
+
+  .contact {
+    height: 1150px;
+  }
+
+  .right-contact {
+    padding: 0;
+  }
+  .contact-content {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  form button {
+    width: 100%;
+  }
+  .line {
+    width: 100%;
+  }
+
+  /* footer  */
+  .footer-item a {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+  }
+
+  p {
+  }
+  a {
+    font-size: 18px;
+  }
+
+  .home {
+    height: 650px;
+    padding: 0 70px;
+  }
+
+  .slav-head {
+    margin-top: 15px;
+    width: 400px;
+  }
+
+  /* skills */
+
+  .skills {
+    height: 1730px;
+    padding: 0 30px;
+  }
+
+  .card-title h3,
+  .card-title2 h3,
+  .card-title3 h3 {
+    font-size: 35px;
+  }
+
+  #card-parent {
+    padding: 0px;
+  }
+  .project-links {
+    margin-top: 10%;
+  }
+  .card {
+    height: 460px;
+    margin: 0px 0px;
+    margin-top: 50px;
+  }
+  /* change color
+ */
+  .about-heading h2 {
+    font-size: 30px;
+    background: linear-gradient(90deg, #e9b32a -1.17%, #ff0b5c 170.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .wave-icon {
+    font-size: 30px;
+    color: var(--primary);
+  }
+
+  .about {
+    height: 700px;
+    padding: 30px 30px;
+  }
+
+  .projects {
+    height: 2300px;
+    padding: 0 30px;
+  }
+  .rectangle {
+    width: 170px;
+  }
+
+  .about-rectangle {
+    width: 170px;
+  }
+
+  .project-rectangle {
+    width: 220px;
+  }
+  .video-1 {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .video-2 {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .contact {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .contact-heading {
+    padding: 10% 0% 0.5% 0%;
   }
 }

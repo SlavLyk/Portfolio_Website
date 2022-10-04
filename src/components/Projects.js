@@ -27,10 +27,13 @@ const Projects = () => {
           </div>
           <p className="project-text">
             Redesigned an outdated WordPress website into a React application
-            with a Back End server. Leading to a better representation of
-            company's brand image and values as well as intuitive user
-            experience.
+            with a Back End server.{" "}
           </p>
+          <p className="project-text">
+            Leading to a better representation of company's brand image and
+            values as well as intuitive user experience.
+          </p>
+
           <div className="project-links">
             {/* MUI BUTTON */}
             <ButtonGroup>
@@ -103,10 +106,13 @@ const Projects = () => {
           </div>
           <p className="project-text">
             Redesigned an outdated WordPress website into a React application
-            with a Back End server. Leading to a better representation of
-            company's brand image and values as well as intuitive user
-            experience.
+            with a Back End server.{" "}
           </p>
+          <p className="project-text">
+            Leading to a better representation of company's brand image and
+            values as well as intuitive user experience.
+          </p>
+
           <div className="project-links">
             <ButtonGroup>
               <Button
