@@ -65,8 +65,7 @@ const Projects = () => {
         <div className="project-right">
           <div className="video-1">
             <iframe
-              className="iframe"
-              src="https://www.youtube.com/embed/jfKfPfyJRdk"
+              src="https://www.youtube.com/embed/Ei5dnPYlii4"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -83,14 +82,6 @@ const Projects = () => {
       <div className="project-content-v2">
         <div className="project-right-v2">
           <div className="video-2">
-            <iframe
-              className="iframe"
-              src="https://www.youtube.com/embed/jfKfPfyJRdk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
             <div className="line"></div>
           </div>
         </div>
@@ -99,9 +90,9 @@ const Projects = () => {
             <h3>Portfolio Website</h3>
             <div className="technologies">
               <div className="tech-items">Node</div>
-              <div className="tech-items">Three.js</div>
-              <div className="tech-items">Express</div>
               <div className="tech-items">React</div>
+              <div className="tech-items">CSS</div>
+              <div className="tech-items">HTML</div>
             </div>
           </div>
           <p className="project-text">
@@ -119,7 +110,7 @@ const Projects = () => {
                 sx={{ fontSize: "16px" }}
                 onClick={(e) => {
                   e.preventDefault();
-                  openInNewTab("https://floating-axe-website.herokuapp.com/");
+                  openInNewTab("https://slavlyk-portfolio.netlify.app/");
                 }}
                 startIcon={<OpenInNewRoundedIcon />}
                 variant="contained"

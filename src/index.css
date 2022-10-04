@@ -420,6 +420,8 @@ label {
   display: flex;
   align-items: start;
   flex-direction: column;
+  width: 100%;
+  background-image: url(../src/imgs/Portfolio-screenshot.jpg);
 }
 
 iframe {
@@ -726,7 +728,7 @@ iframe {
 
   iframe {
     width: 85%;
-    height: 63%;
+    height: 75%;
   }
 
   .project-content-v1 {
