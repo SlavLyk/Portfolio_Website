@@ -38,7 +38,7 @@ const Header = () => {
       </div>
       <div className="header-item header-resume">
         <a
-          href="https://drive.google.com/file/d/1Obor1iHBcn2qnUdgkanjkFjMLd0fydy2/view?usp=sharing"
+          href="https://drive.google.com/file/d/1v3uT3XabTEh-6z4adZlI6DfyFny0LhBK/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

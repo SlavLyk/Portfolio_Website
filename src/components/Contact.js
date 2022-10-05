@@ -124,22 +124,38 @@ const Contact = () => {
       </form>
       <div className="footer">
         <div className="footer-item header-linkedin">
-          <a href="https://www.linkedin.com/in/svyatoslav-lykhosherstov/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/slav-lyk/"
+          >
             <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
           </a>
         </div>
         <div className="footer-item header-github">
-          <a href="https://github.com/SlavLyk?tab=repositories">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/SlavLyk?tab=repositories"
+          >
             <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
           </a>
         </div>
         <div className="footer-item header-youtube">
-          <a href="https://www.youtube.com/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/channel/UCCb5zddp6_qXL_oo34U6nWw"
+          >
             <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
           </a>
         </div>
         <div className="footer-item header-resume">
-          <a href="https://www.linkedin.com/in/svyatoslav-lykhosherstov/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1v3uT3XabTEh-6z4adZlI6DfyFny0LhBK/view?usp=sharing"
+          >
             <FontAwesomeIcon icon={faFile}></FontAwesomeIcon>
           </a>
         </div>

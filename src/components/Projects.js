@@ -124,7 +124,7 @@ const Projects = () => {
                 sx={{ fontSize: "16px" }}
                 onClick={(e) => {
                   e.preventDefault();
-                  openInNewTab("https://github.com/SlavLyk/Fas_Website");
+                  openInNewTab("https://github.com/SlavLyk/Portfolio_Website");
                 }}
                 variant="outlined"
                 color="secondary"
