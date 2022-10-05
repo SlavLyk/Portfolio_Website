@@ -29,7 +29,7 @@ const Header = () => {
       </div>
       <div className="header-item header-youtube">
         <a
-          href="https://www.youtube.com/"
+          href="https://www.youtube.com/channel/UCCb5zddp6_qXL_oo34U6nWw"
           target="_blank"
           rel="noopener noreferrer"
         >

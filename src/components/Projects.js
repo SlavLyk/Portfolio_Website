@@ -2,6 +2,7 @@ import * as React from "react";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Button from "@mui/material/Button";
 import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
+import Screenshot from "../imgs/Portfolio-screenshot.jpg";
 
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noopener,noreferrer");
@@ -82,6 +83,7 @@ const Projects = () => {
       <div className="project-content-v2">
         <div className="project-right-v2">
           <div className="video-2">
+            <div className="screenshot"></div>
             <div className="line"></div>
           </div>
         </div>
@@ -91,17 +93,17 @@ const Projects = () => {
             <div className="technologies">
               <div className="tech-items">Node</div>
               <div className="tech-items">React</div>
-              <div className="tech-items">CSS</div>
-              <div className="tech-items">HTML</div>
+              <div className="tech-items">FlexBox</div>
+              <div className="tech-items">Material Ui</div>
             </div>
           </div>
           <p className="project-text">
-            Redesigned an outdated WordPress website into a React application
-            with a Back End server.{" "}
+            Designed a portfolio website in Figma, led the design from a wire
+            frame to a finished React, Node.js application.{" "}
           </p>
           <p className="project-text">
-            Leading to a better representation of company's brand image and
-            values as well as intuitive user experience.
+            I utilized Material Ui 5 components, created a custom theme and
+            learned how to use it in future projects.
           </p>
 
           <div className="project-links">
