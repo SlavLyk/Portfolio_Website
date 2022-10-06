@@ -18,7 +18,7 @@ Designed a portfolio website in Figma, led the design from a wire frame to a fin
 - Form Submit.
 ### Thanks!
 <h2 align="center">
-    <a href="https://www.danny-berger.dev/">
+    <a href="https://slavlyk-portfolio.netlify.app/">
         <img src="https://github.com/SlavLyk/Portfolio_Website/blob/master/src/imgs/Portfolio-screenshot.jpg?raw=true" alt="Portfolio" width="1000px" />
     </a>
     <br>
