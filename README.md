@@ -16,6 +16,9 @@ Designed a portfolio website in Figma, led the design from a wire frame to a fin
 - Deploying a site to Netlify.
 - Responsive design.
 - Form Submit.
+- Figma designing from scratch
+<a href="https://www.figma.com/file/Ub09CU2ImlU0PZ1cwZgBaf/My-Responsive-Web-Portfolio?node-id=213%3A3">Link to my Figma Design Page</a> ⚡️
+
 ### Thanks!
 <h2 align="center">
     <a href="https://slavlyk-portfolio.netlify.app/">
